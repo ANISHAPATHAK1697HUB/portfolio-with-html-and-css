@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anish's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #222; }
+        header { background: #222; color: #fff; padding: 40px 0 20px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { margin: 10px 0 0 0; font-size: 1.2em; color: #bbb; }
+        nav { background: #333; text-align: center; }
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; padding: 14px 0; display: inline-block; }
+        nav a:hover { color: #ffd700; }
+        section { max-width: 900px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+        .about-img { float: left; width: 140px; height: 140px; border-radius: 50%; margin-right: 30px; object-fit: cover; }
+        .about-content { overflow: hidden; }
+        h2 { color: #222; border-bottom: 2px solid #ffd700; padding-bottom: 8px; margin-bottom: 20px; }
+        ul.skills { list-style: none; padding: 0; }
+        ul.skills li { display: inline-block; background: #ffd700; color: #222; margin: 6px 10px 6px 0; padding: 8px 16px; border-radius: 20px; font-weight: bold; }
+        .projects { display: flex; flex-wrap: wrap; gap: 24px; }
+        .project-card { background: #fafafa; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); flex: 1 1 260px; min-width: 260px; max-width: 100%; padding: 18px; }
+        .project-card img { width: 100%; height: 120px; object-fit: cover; border-radius: 6px; }
+        .project-card h3 { margin: 12px 0 8px 0; }
+        .resume-link { display: inline-block; margin-top: 10px; background: #222; color: #ffd700; padding: 10px 22px; border-radius: 24px; text-decoration: none; font-weight: bold; }
+        .resume-link:hover { background: #ffd700; color: #222; }
+        .contact-info { font-size: 1.1em; }
+        .contact-info a { color: #222; text-decoration: underline; }
+        footer { background: #222; color: #fff; text-align: center; padding: 18px 0; margin-top: 40px; font-size: 1em; }
+        @media (max-width: 700px) {
+            .about-img { float: none; display: block; margin: 0 auto 20px auto; }
+            .projects { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anisha Pathak</h1>
+        <p>Web Developer & Designer | Turning ideas into reality</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Anisha Pathak" class="about-img">
+        <div class="about-content">
+            <p>
+                Hi! I'm Anisha Pathak, a passionate web developer with experience in building responsive and user-friendly websites. I enjoy solving problems and bringing creative ideas to life using modern web technologies. My expertise includes HTML, CSS, JavaScript, and more.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website to showcase my skills, projects, and resume. Built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Task Manager App</h3>
+                <p>A simple and intuitive task manager application to organize daily tasks efficiently. Developed using React and Bootstrap.</p>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Responsive Blog</h3>
+                <p>A modern, responsive blog platform with support for multiple authors and categories. Designed with mobile-first principles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="Anisha_Pathak_Resume.pdf" class="resume-link" download>Download My Resume (PDF)</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:anisha.pathak@email.com">anisha.pathak@email.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Anisha Pathak. All rights reserved.
+    </footer>
+</body>
+</html>
